@@ -1,7 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import SettingsScreen from "./screens/SettingsScreen";
-import CourseListScreen from "./screens/CourseList";
+import DashboardScreen from "./screens/DashboardScreen";
 import ProfileScreen from "./screens/Profile";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { AboutStack } from "./AppStack";
@@ -18,7 +18,7 @@ export default function App() {
           tabBarActiveTintColor: "purple",
         }}
       >
-        <Tab.Screen name="Course List" component={CourseListScreen} />
+        <Tab.Screen name="DashboardScreen" component={DashboardScreen} />
         <Tab.Screen
           name="Profile"
           component={ProfileScreen}
